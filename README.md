@@ -1,2 +1,2 @@
 # Chatbot-Based-Ticketing-For-Museums
-![Image Alt text](/Images/WebsitePreview.png "Optional title")
+![Image Alt text](/Images/Website.png "Optional title")
