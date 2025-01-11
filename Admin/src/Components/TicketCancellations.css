@@ -1,0 +1,32 @@
+.cancellation-requests {
+  padding: 16px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.MuiCard-root {
+  margin-bottom: 16px;
+}
+
+.MuiTypography-h4 {
+  margin-bottom: 16px;
+}
+
+.MuiTypography-h5 {
+  margin-bottom: 8px;
+}
+
+.MuiDivider-root {
+  margin: 16px 0;
+}

@@ -1,0 +1,140 @@
+.user-profile-container {
+  width: 100%;
+  max-width: 60rem;
+  min-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: hsl(0, 0%, 89%);
+  border-radius: 1.8rem;
+  box-shadow: 0 4px 12px #0000001a;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.profile-image {
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  border: 4px solid #4CAF50;
+}
+
+.profile-icon {
+  height: 128px;
+  width: 128px;
+  color: #888;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.action-button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  opacity: 0.9;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("cool-background.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-profile-container {
+      width: 100%;
+      max-width: 40rem;
+      min-height: auto;
+      padding: 15px;
+  }
+
+  .header-buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-button {
+      margin-bottom: 10px;
+      font-size: 14px;
+  }
+
+  .profile-image, .profile-icon {
+      height: 100px;
+      width: 100px;
+  }
+
+  .action-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-profile-container {
+      width: 100%;
+      max-width: 100%;
+      padding: 10px;
+  }
+
+  .nav-button {
+      font-size: 12px;
+      padding: 8px;
+  }
+
+  .profile-image, .profile-icon {
+      height: 80px;
+      width: 80px;
+  }
+
+  .action-button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}

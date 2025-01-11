@@ -1,0 +1,141 @@
+/* src/styles/App.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5em;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 10px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .sidebar {
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    top: 50px; /* Adjust according to navbar height */
+    left: 0;
+    overflow-y: auto;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    margin-top: 50px; /* Adjust according to navbar height */
+    flex: 1;
+  }
+  
+  .card, .metric-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  .card h2, .metric-card h2 {
+    margin: 0;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  

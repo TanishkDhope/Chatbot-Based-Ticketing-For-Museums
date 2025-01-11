@@ -1,0 +1,77 @@
+.chatbot-popup-container {
+    position: fixed;
+    top: 10rem;
+    right: 2rem;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    animation: popup-slide-down 0.5s ease-out;
+    z-index: 999; /* Ensure it is always on top */
+  }
+  
+  .chatbot-popup-content {
+    text-align: center;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+  }
+  
+  .chatbot-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: #999;
+  }
+  
+  .chatbot-close-btn:hover {
+    color: #000;
+  }
+  
+  .popup-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .popup-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .popup-btn {
+    display: inline-block;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-btn:hover {
+    background-color: #45a049;
+  }
+  
+  @keyframes popup-slide-down {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

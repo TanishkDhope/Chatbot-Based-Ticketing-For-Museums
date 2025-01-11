@@ -1,0 +1,211 @@
+/* General Settings */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+  margin: 0;
+  padding: 40px;
+  background-color: #f0f4f8;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #007bff;
+  font-size: 3rem; /* Increased font size */
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.start-quiz,
+.quiz-restriction,
+.score-section,
+.coupon-section {
+  text-align: center;
+  max-width: 650px;
+  width: 100%;
+}
+
+.start-quiz input.email-input {
+  padding: 15px 20px;
+  width: 100%;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 1.4rem; /* Increased font size */
+  background-color: #e9f1fa;
+  color: #333;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.start-quiz input.email-input:focus {
+  border-color: #0056b3;
+  background-color: #d1e4f0;
+  outline: none;
+}
+
+.start-quiz button.start-button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-quiz button.start-button:hover {
+  background-color: #0056b3;
+}
+
+/* Question and Answer Section */
+.question-section,
+.answer-section {
+  margin: 25px 0;
+  width: 100%;
+}
+
+.question-text {
+  font-size: 1.75rem; /* Increased font size */
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.answer-section button.answer-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border: 2px solid #007bff;
+  background-color: #e9f1fa;
+  color: #333;
+  border-radius: 8px;
+  font-size: 1.4rem; /* Increased font size */
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.answer-section button.answer-button:hover {
+  background-color: #d1e4f0;
+  border-color: #0056b3;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background-color: #cfd8dc;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.progress-bar-fill {
+  height: 20px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+/* Timer */
+.timer {
+  font-size: 1.5rem; /* Increased font size */
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Buttons in Score and Coupon Section */
+.score-section button,
+.coupon-section button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.score-section button:hover,
+.coupon-section button:hover {
+  background-color: #0056b3;
+}
+
+.coupon-section .coupon-code {
+  margin-top: 25px;
+}
+
+.coupon-section .code-name {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #f0f4f8;
+  color: #007bff;
+  font-size: 1.6rem; /* Increased font size */
+  font-weight: 600;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  word-break: break-word;
+}
+
+.coupon-section {
+  margin-top: 15px;
+  background-color: #fff;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.copy-button{
+  margin-left: 30px;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  background-color: green;
+}
+
+.coupon-section button.copy-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 2.5rem; /* Increased font size */
+  }
+
+  .start-quiz input.email-input {
+    font-size: 1.2rem; /* Increased font size */
+  }
+
+  .start-quiz button.start-button,
+  .score-section button,
+  .coupon-section button {
+    font-size: 1.3rem; /* Increased font size */
+  }
+
+  .question-text {
+    font-size: 1.5rem; /* Increased font size */
+  }
+
+  .answer-section button.answer-button {
+    font-size: 1.3rem; /* Increased font size */
+  }
+
+  .timer {
+    font-size: 1.4rem; /* Increased font size */
+  }
+
+  .coupon-section .code-name {
+    font-size: 1.4rem; /* Increased font size */
+  }
+}

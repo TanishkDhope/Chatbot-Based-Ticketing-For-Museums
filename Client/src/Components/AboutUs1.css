@@ -1,0 +1,375 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  color: white;
+  font-size: 6rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 2rem; /* Increased margin */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-description {
+  color: white;
+  font-size: 2rem; /* Increased font size */
+  max-width: 38rem; /* Increased max-width */
+  text-align: center;
+}
+
+/* Hero Section Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Mission Section */
+.mission-section {
+  padding-top: 4rem; /* Increased padding */
+  padding-bottom: 4rem; /* Increased padding */
+  background-color: #f7fafc;
+}
+
+.mission-container {
+  max-width: 120rem; /* Slightly increased max-width */
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 3rem; /* Increased gap */
+}
+
+@media (min-width: 768px) {
+  .mission-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.mission-card {
+  background-color: white;
+  padding: 2.5rem; /* Increased padding */
+  border-radius: 1rem; /* Increased border radius */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* Slightly increased shadow */
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.mission-card:hover {
+  background-color: #edf2f7;
+  transform: scale(1.05);
+}
+
+.mission-icon {
+  font-size: 3rem; /* Increased icon size */
+  color: #4299e1;
+  margin-bottom: 2rem; /* Increased margin */
+}
+
+.mission-title {
+  font-size: 1.75rem; /* Increased font size */
+  font-weight: 600;
+  margin-bottom: 1rem; /* Increased margin */
+}
+
+.mission-description {
+  font-size: 1.5rem;
+}
+
+/* History Timeline */
+.history-timeline {
+  padding-top: 3.5rem; /* Increased padding */
+  padding-bottom: 3.5rem; /* Increased padding */
+  background-color: white;
+}
+
+.history-title {
+  text-align: center;
+  font-size: 2.5rem; /* Further increased font size */
+  font-weight: bold;
+  margin-bottom: 2.5rem; /* Increased margin */
+  animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Testimonial Slider */
+.testimonial-section {
+  padding-top: 4rem; /* Increased padding */
+  padding-bottom: 4rem; /* Increased padding */
+  background-color: #f7fafc;
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 3rem; /* Increased margin */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem; /* Increased padding */
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* Slightly increased shadow */
+  border-radius: 1rem; /* Increased border radius */
+  transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-quote {
+  font-style: italic;
+  font-size: 1.5rem; /* Increased font size */
+  margin-bottom: 1.5rem; /* Increased margin */
+}
+
+/* Museum Map */
+.museum-map-section {
+  padding-top: 4rem; /* Increased padding */
+  padding-bottom: 4rem; /* Increased padding */
+  background-color: white;
+}
+
+.museum-map-title {
+  text-align: center;
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 3rem; /* Increased margin */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.museum-map-container {
+  position: relative;
+  max-width: 90rem; /* Slightly increased max-width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.museum-map-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem; /* Increased border radius */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* Slightly increased shadow */
+}
+
+/* Call to Action */
+.call-to-action {
+  padding-top: 4rem; /* Increased padding */
+  padding-bottom: 4rem; /* Increased padding */
+  background-color: #4299e1;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.call-to-action::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(-30deg);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.call-to-action-title {
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* Increased margin */
+  position: relative;
+  z-index: 1;
+}
+
+.call-to-action-description {
+  margin-bottom: 3rem; /* Increased margin */
+  position: relative;
+  z-index: 1;
+}
+
+.call-to-action-button {
+  background-color: white;
+  color: #4299e1;
+  font-weight: 600;
+  padding: 1rem 2rem; /* Increased padding */
+  border-radius: 1rem; /* Increased border radius */
+  margin-right: 1.5rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.call-to-action-button:last-child {
+  margin-right: 0;
+}
+
+.call-to-action-button:hover {
+  background-color: #edf2f7;
+  transform: scale(1.1);
+}
+
+.call-to-action-button:active {
+  background-color: #4299e1;
+  color: white;
+  transform: scale(0.9);
+}
+
+/* Video Tour */
+.video-tour-section {
+  padding-top: 4rem; /* Increased padding */
+  padding-bottom: 4rem; /* Increased padding */
+  background-color: #f7fafc;
+  text-align: center;
+}
+
+.video-tour-title {
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 3rem; /* Increased margin */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.video-tour-container {
+  position: relative;
+  max-width: 70rem; /* Slightly increased max-width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-tour-iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-tour-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem; /* Increased border radius */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* Slightly increased shadow */
+}
+
+/* Footer */
+.footer {
+  background-color: #2d3748;
+  color: white;
+  padding-top: 3rem; /* Increased padding */
+  padding-bottom: 3rem; /* Increased padding */
+}
+
+.footer-container {
+  max-width: 120rem; /* Slightly increased max-width */
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 3rem; /* Increased gap */
+}
+
+@media (min-width: 640px) {
+  .footer-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.footer-heading {
+  font-size: 2rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 2rem; /* Increased margin */
+}
+
+.footer-contact-info {
+  line-height: 1.85; /* Increased line height */
+  font-size: 1.25rem;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: text-decoration 0.3s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.para {
+  font-size: 1.25rem;
+}
+
+.footer-newsletter-email[type="email"] {
+  margin-top: 1.5rem; /* Increased margin */
+  padding: 1rem; /* Increased padding */
+  border-radius: 0.25rem; /* Increased border radius */
+  background-color: #4a5568;
+  color: white;
+  width: 90%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.footer-newsletter-button {
+  margin-top: 1rem; /* mt-4 */
+  background-color: #3b82f6; /* bg-blue-500 */
+  color: #ffffff; /* text-white */
+  padding-top: 0.5rem; /* py-2 */
+  padding-bottom: 0.5rem; /* py-2 */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+  border-radius: 0.375rem; /* rounded */
+  display: block;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 1.25rem;
+  display: block;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #63b3ed;
+}

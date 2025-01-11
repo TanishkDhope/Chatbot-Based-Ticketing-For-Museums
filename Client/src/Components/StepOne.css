@@ -1,0 +1,11 @@
+.ticket-type-selector {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ticket-type-info {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  

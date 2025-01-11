@@ -1,0 +1,110 @@
+.ticket-container {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  background-color: #F1F1F1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 2rem;
+}
+
+.ticket-header {
+  background-color: #1976D2;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+.ticket-details p {
+  margin: 12px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.ticket-details strong {
+  color: #FF9800;
+}
+
+.qr-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+
+.qr-code p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.download-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #1976D2;
+}
+/* Ticket.css */
+
+.ticket-container.cancelled {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.cancel-button {
+  margin-top: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  
+}
+
+.cancel-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.confirm-cancel-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cancellation-info {
+  color: #721c24;
+  margin-top: 10px;
+}
+.info-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+
+  .info-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,22 @@
+.tour-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+  }
+  
+  .overlay-message {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10; /* Ensure it's on top of the Street View */
+  }
+  
+  .overlay-message h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  

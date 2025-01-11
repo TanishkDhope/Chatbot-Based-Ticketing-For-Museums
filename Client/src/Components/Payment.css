@@ -1,0 +1,103 @@
+/* Payment Portal Container */
+
+.main-portal{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment-portal {
+  min-width: 400px;
+  min-height: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title */
+.payment-portal h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Form Fields */
+.payment-portal label {
+  font-size: 16px;
+  color: #34495e;
+  font-weight: 600;
+  margin-bottom: 14px;
+  display: block;
+}
+
+/* Input and Select Fields */
+.payment-portal input[type="number"],
+.payment-portal select {
+ 
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+  background-color: #ecf0f1;
+  box-sizing: border-box;
+}
+
+/* Input and Select Field Focus */
+.payment-portal input[type="number"]:focus,
+.payment-portal select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+/* Pay Now Button */
+.payment-portal button {
+  padding: 12px 20px;
+  margin-top: 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.payment-portal button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .payment-portal {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .payment-portal input[type="number"],
+  .payment-portal select,
+  .payment-portal button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .payment-portal h2 {
+    font-size: 22px;
+  }
+}
+
+.amount{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}

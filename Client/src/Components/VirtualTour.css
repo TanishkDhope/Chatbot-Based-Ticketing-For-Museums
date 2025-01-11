@@ -1,0 +1,86 @@
+/* VirtualTour.css */
+
+.virtual-tour-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    background-color: black; /* Black background */
+    border-radius: 8px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* More pronounced shadow for depth */
+    color: white; /* White text color for contrast */
+  }
+  
+  .virtual-tour-title {
+    position: absolute;
+    top: 15px;
+    left: 450px;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7); /* Slightly opaque background for readability */
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px; /* Rounded corners for iframe */
+  }
+  
+  .loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.8); /* Darker background for visibility */
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+  
+  .exit-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff4d4d; /* Red button for exit */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 16px;
+    margin-right: 60px;
+  }
+  .fullscreen-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff4d4d; /* Red button for exit */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 16px;
+    margin-right: 130px;
+  }
+
+
+  .exit-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+  }
+  
+  .fullscreen-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+  }
+  
